@@ -35,7 +35,7 @@ const Sidebar = () => {
       {/* Logo/Brand */}
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center space-x-3">
-          <div className="bg-primary-600 p-2 rounded-lg">
+          <div className="bg-blue-600 p-2 rounded-lg">
             <Package className="h-6 w-6 text-white" />
           </div>
           <div>
@@ -57,7 +57,7 @@ const Sidebar = () => {
                   href={item.href}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-200 ${
                     isActive
-                      ? "bg-primary-50 text-primary-700 border-r-2 border-primary-600"
+                      ? "bg-blue-50 text-blue-700 border-r-2 border-blue-600"
                       : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                   }`}
                 >

@@ -167,8 +167,8 @@ const Dashboard = () => {
                   <p className="text-3xl font-bold text-gray-900 mt-2">{kpi.value}</p>
                   <p className="text-xs text-gray-500 mt-1">{kpi.description}</p>
                 </div>
-                <div className={`p-3 rounded-full bg-${kpi.color}-50`}>
-                  <Icon className={`h-6 w-6 text-${kpi.color}-600`} />
+                <div className={`p-3 rounded-full bg-${kpi.color === "primary" ? "blue" : kpi.color}-50`}>
+                  <Icon className={`h-6 w-6 text-${kpi.color === "primary" ? "blue" : kpi.color}-600`} />
                 </div>
               </div>
             </Card>
@@ -197,7 +197,7 @@ const Dashboard = () => {
           <div className="mt-4 pt-4 border-t border-gray-200">
             <Link
               href="/forecasts"
-              className="text-sm text-primary-600 hover:text-primary-700 font-medium flex items-center space-x-1"
+              className="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center space-x-1"
             >
               <span>View all alerts</span>
               <ArrowRight className="h-3 w-3" />
@@ -237,7 +237,7 @@ const Dashboard = () => {
           <div className="mt-4 pt-4 border-t border-gray-200">
             <Link
               href="/forecasts"
-              className="text-sm text-primary-600 hover:text-primary-700 font-medium flex items-center space-x-1"
+              className="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center space-x-1"
             >
               <span>Create detailed forecast</span>
               <ArrowRight className="h-3 w-3" />
@@ -253,11 +253,11 @@ const Dashboard = () => {
           <div className="text-sm text-gray-600 mt-1">Active Products</div>
         </Card>
         <Card className="text-center">
-          <div className="text-2xl font-bold text-success-600">18</div>
+          <div className="text-2xl font-bold text-green-600">18</div>
           <div className="text-sm text-gray-600 mt-1">Optimal Stock</div>
         </Card>
         <Card className="text-center">
-          <div className="text-2xl font-bold text-warning-600">6</div>
+          <div className="text-2xl font-bold text-orange-600">6</div>
           <div className="text-sm text-gray-600 mt-1">Need Attention</div>
         </Card>
       </div>
